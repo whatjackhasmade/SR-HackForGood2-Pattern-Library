@@ -16,6 +16,7 @@
         "event-hooks-webpack-plugin": "^2.1.1",
         "globby": "^9.2.0",
         "patternlab-node": "^2.12.0",
+        "starterkit-mustache-demo": "^4.0.2",
         "styleguidekit-assets-default": "^3.5.2",
         "styleguidekit-mustache-default": "^3.1.0",
         "uglifyjs-webpack-plugin": "^2.1.2",
