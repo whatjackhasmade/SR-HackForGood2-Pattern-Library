@@ -9,6 +9,7 @@
     "@pattern-lab/patternlab-node": "^3.0.0-alpha.8",
     "@pattern-lab/styleguidekit-assets-default": "^4.0.0-alpha.3",
     "@pattern-lab/styleguidekit-mustache-default": "^4.0.0-alpha.1",
+    "bootstrap": "^4.3.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",

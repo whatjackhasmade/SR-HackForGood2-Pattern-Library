@@ -1,30 +1,29 @@
 /* HTML */
 
 html {
-	font-size: 62.5%;
-	/* BETTER FONT SMOOTHING - https://gist.github.com/hsleonis/55712b0eafc9b25f1944 */
-	font-variant-ligatures: none;
-	-webkit-font-variant-ligatures: none;
-	text-rendering: optimizeLegibility;
-	-moz-osx-font-smoothing: grayscale;
-	font-smoothing: antialiased;
-	-webkit-font-smoothing: antialiased;
-	text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  /* BETTER FONT SMOOTHING - https://gist.github.com/hsleonis/55712b0eafc9b25f1944 */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 
-	/* Always show a scrollbar to avoid horizontal spacing jumps on full height pages */
-	overflow-y: scroll;
+  /* Always show a scrollbar to avoid horizontal spacing jumps on full height pages */
+  overflow-y: scroll;
 
-	&.fixed {
-		overflow: hidden;
-	}
+  &.fixed {
+    overflow: hidden;
+  }
 }
 
 ::-moz-selection {
-	background: rgba($primary, 0.8);
-	color: $white;
+  background: rgba($primary, 0.8);
+  color: $white;
 }
 
 ::selection {
-	background: rgba($primary, 0.8);
-	color: $white;
+  background: rgba($primary, 0.8);
+  color: $white;
 }

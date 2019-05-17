@@ -1,57 +1,57 @@
 /* FORM */
 
 ::placeholder {
-	color: $grey-400;
-	opacity: 1;
+  color: $grey-400;
+  opacity: 1;
 }
 
 form {
-	input,
-	textarea {
-		padding: $spacing-tiny;
-	}
+  input,
+  textarea {
+    padding: $spacing-tiny;
+  }
 }
 
 input {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 textarea {
-	max-width: 100%;
-	resize: vertical;
+  max-width: 100%;
+  resize: vertical;
 }
 
 fieldset {
-	padding: $spacing-default;
-	border-color: $grey-400;
-	border-style: solid;
+  padding: $spacing-default;
+  border-color: $grey-400;
+  border-style: solid;
 }
 
 form {
-	color: $black;
-	button,
-	input,
-	select {
-		margin-top: $spacing-default;
-	}
+  color: $black;
+  button,
+  input,
+  select {
+    margin-top: $spacing-default;
+  }
 }
 
 label {
-	display: block;
-	margin-bottom: $spacing-tiny;
-	color: $grey-700;
-	font-size: 1.6rem;
-	font-weight: 700;
-	text-transform: capitalize;
+  display: block;
+  margin-bottom: $spacing-tiny;
+  color: $grey-700;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
 
-	& ~ label {
-		margin-top: $spacing-default;
-	}
+  & ~ label {
+    margin-top: $spacing-default;
+  }
 
-	& + input {
-		margin-bottom: $spacing-small;
-		margin-top: $spacing-tiny;
-	}
+  & + input {
+    margin-bottom: $spacing-small;
+    margin-top: $spacing-tiny;
+  }
 }
 
 input[type="email"],
@@ -60,30 +60,43 @@ input[type="password"],
 input[type="tel"],
 input[type="text"],
 select {
-	border-radius: $border-radius-default;
-	display: block;
-	min-height: 44px;
-	padding: $spacing-small $spacing-default;
-	width: 100%;
-	background: $white;
-	border: 1px solid $grey-400;
-	color: $grey-700;
-	transition: border-color 0.25s, box-shadow 0.25s;
+  border-radius: $border-radius-default;
+  display: block;
+  min-height: 44px;
+  padding: $spacing-small $spacing-default;
+  width: 100%;
+  background: $white;
+  border: 1px solid $grey-400;
+  color: $grey-700;
+  transition: border-color 0.25s, box-shadow 0.25s;
 }
 
 input[readonly] {
-	cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 textarea {
-	border-radius: $border-radius-default;
-	display: block;
-	min-height: 200px;
-	padding: $spacing-small $spacing-default;
-	width: 100%;
-	background: $white;
-	border: 1px solid $grey-400;
-	color: $grey-700;
-	resize: vertical;
-	transition: border-color 0.25s, box-shadow 0.25s;
+  border-radius: $border-radius-default;
+  display: block;
+  min-height: 200px;
+  padding: $spacing-small $spacing-default;
+  width: 100%;
+  background: $white;
+  border: 1px solid $grey-400;
+  color: $grey-700;
+  resize: vertical;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.input-group {
+  button {
+    min-width: 70px;
+
+    border-radius: 0 3px 3px 0;
+    box-shadow: none;
+  }
+
+  input {
+    border-radius: 3px 0 0 3px;
+  }
 }

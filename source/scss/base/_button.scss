@@ -4,54 +4,51 @@ button,
 input[type="button"],
 input[type="submit"],
 .button {
-	border-radius: $border-radius-default;
-	display: inline-block;
-	padding: 24px 34px;
-	position: relative;
+  border-radius: $border-radius-default;
+  display: inline-block;
+  min-height: 44px;
+  padding: 24px 34px;
+  position: relative;
 
-	background-color: $primary;
-	border: none;
-	box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-	color: $white;
-	cursor: pointer;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 1;
-	outline: none;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.15s ease;
-	white-space: nowrap;
+  background-color: $primary;
+  border: none;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  color: $white;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
 
-	&:hover {
-		transform: translateY(-1px);
-	}
+  &:focus,
+  &:hover {
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
 
-	&:focus,
-	&:hover {
-		box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-	}
-
-	i,
-	svg {
-		color: $white;
-		margin-right: $spacing-small;
-	}
+  i,
+  svg {
+    color: $white;
+    margin-right: $spacing-small;
+  }
 }
 
 button[disabled] {
-	background: $grey-400;
-	border: none;
-	cursor: not-allowed;
+  background: $grey-400;
+  border: none;
+  cursor: not-allowed;
 }
 
 button[type="reset"] {
-	background: transparent;
-	border: 1px $secondary;
-	opacity: 0.5;
+  background: transparent;
+  border: 1px $secondary;
+  opacity: 0.5;
 
-	@include active-states() {
-		opacity: 1;
-	}
+  @include active-states() {
+    opacity: 1;
+  }
 }
