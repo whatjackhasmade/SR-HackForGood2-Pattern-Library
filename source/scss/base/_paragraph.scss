@@ -1,11 +1,11 @@
 /* PARAGRAPH */
 
 p {
-	margin-bottom: 0;
-	margin-top: 0;
-	font-size: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 20px;
 
-	+ * {
-		margin-top: $spacing-default;
-	}
+  + * {
+    margin-top: $spacing-default;
+  }
 }

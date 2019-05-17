@@ -1,0 +1,34 @@
+/* CHAT */
+
+.chat {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  li {
+    margin-bottom: 0;
+    padding: $spacing-default;
+
+    border-bottom: 1px dotted $grey-600;
+
+    .chat-body p {
+      margin: 0;
+
+      color: $grey-900;
+    }
+  }
+
+  .header {
+    color: $grey-700;
+
+    strong {
+      font-weight: 400;
+    }
+  }
+}
+
+.panel-body {
+  overflow-y: scroll;
+  height: 350px;
+}
