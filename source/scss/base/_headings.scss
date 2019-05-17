@@ -6,12 +6,13 @@ h3,
 h4,
 h5,
 h6 {
-	margin-bottom: 16px;
-	margin-top: 0;
+  margin-bottom: 16px;
+  margin-top: 0;
 
-	font-weight: $font-weight-bold;
-	line-height: 1.15;
-	text-transform: capitalize;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-bold;
+  line-height: 1.15;
+  text-transform: capitalize;
 }
 
 $heading-1: 72px;
@@ -24,57 +25,57 @@ $heading-tiny: 16px;
 
 h1,
 .h1 {
-	font-size: $heading-2;
+  font-size: $heading-2;
 }
 
 h2,
 .h2 {
-	font-size: $heading-3;
+  font-size: $heading-3;
 }
 
 h3,
 .h3 {
-	font-size: $heading-4;
+  font-size: $heading-4;
 }
 
 h4,
 .h4 {
-	font-size: $heading-5;
+  font-size: $heading-5;
 }
 
 h5,
 .h5 {
-	font-size: $heading-6;
+  font-size: $heading-6;
 }
 
 h6,
 .h6 {
-	font-size: $heading-tiny;
+  font-size: $heading-tiny;
 }
 
 @include bp-min-width($bp-lg) {
-	h1,
-	.h1 {
-		font-size: $heading-1;
-	}
-	h2,
-	.h2 {
-		font-size: $heading-2;
-	}
-	h3,
-	.h3 {
-		font-size: $heading-3;
-	}
-	h4,
-	.h4 {
-		font-size: $heading-4;
-	}
-	h5,
-	.h5 {
-		font-size: $heading-5;
-	}
-	h6,
-	.h6 {
-		font-size: $heading-6;
-	}
+  h1,
+  .h1 {
+    font-size: $heading-1;
+  }
+  h2,
+  .h2 {
+    font-size: $heading-2;
+  }
+  h3,
+  .h3 {
+    font-size: $heading-3;
+  }
+  h4,
+  .h4 {
+    font-size: $heading-4;
+  }
+  h5,
+  .h5 {
+    font-size: $heading-5;
+  }
+  h6,
+  .h6 {
+    font-size: $heading-6;
+  }
 }
