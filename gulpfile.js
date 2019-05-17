@@ -43,6 +43,7 @@ function serve() {
       cleanPublic: config.cleanPublic
     })
     .then(() => {
+      gulp.start("watch");
       // do something else when this promise resolves
     });
 }
@@ -51,6 +52,7 @@ function serve() {
 gulp.task("sass", function() {
   return gulp
     .src(`source/scss/style.scss`)
+    .pipe(customPlumber("Error running Sass"))
     .pipe(sassGlob())
     .pipe(sass())
     .pipe(autoprefixer({ browsers: ["last 2 versions"], cascade: false }))
@@ -122,3 +124,13 @@ gulp.task("patternlab:installplugin", function() {
 });
 
 gulp.task("default", ["patternlab:serve"]);
+
+/* Gulp Task: Custom error message handling in console */
+function customPlumber(errTitle) {
+  return plumber({
+    errorHandler: notify.onError({
+      title: errTitle || "Error running Gulp",
+      message: "Error: <%= error.message %>"
+    })
+  });
+}
