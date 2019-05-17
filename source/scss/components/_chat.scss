@@ -35,8 +35,10 @@
 
     color: $grey-700;
     font-family: $font-family-heading;
+    font-size: 12px;
+    letter-spacing: 1px;
     line-height: 1.15;
-    text-transform: capitalize;
+    text-transform: uppercase;
 
     strong {
       font-weight: 400;
