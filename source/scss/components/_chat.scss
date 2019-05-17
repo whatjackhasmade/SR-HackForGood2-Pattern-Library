@@ -8,19 +8,35 @@
 
   li {
     margin-bottom: 0;
-    padding: $spacing-default;
+    padding: $spacing-large $spacing-default;
 
+    background-color: $white;
     border-bottom: 1px dotted $grey-600;
+    transition: 0.4s background-color ease;
+
+    &:nth-of-type(2n) {
+      background-color: $grey-100;
+    }
 
     .chat-body p {
       margin: 0;
+      max-width: 760px;
 
-      color: $grey-900;
+      color: $black;
     }
   }
 
+  p {
+    font-size: 16px;
+  }
+
   .header {
+    margin-bottom: $spacing-small;
+
     color: $grey-700;
+    font-family: $font-family-heading;
+    line-height: 1.15;
+    text-transform: capitalize;
 
     strong {
       font-weight: 400;
