@@ -6,30 +6,36 @@ header {
   position: fixed;
   width: 100%;
 
-  background: $grey-100;
-  border-top: 1px solid $grey-500;
-  color: $black;
+  background: #042e44;
+  color: #30e3ca;
+  color: white;
   font-family: $font-family-heading;
   font-weight: $font-weight-bold;
 
   a {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: $spacing-default;
 
     color: inherit;
-    font-size: 1.3rem;
+    font-size: 14px;
     text-decoration: none;
+
+    @include active-states() {
+      color: white;
+    }
   }
 
   li {
     flex-grow: 1;
     text-align: center;
+  }
 
-    + li {
-      a {
-        border-left: 1px solid $grey-500;
-      }
-    }
+  img {
+    height: 24px;
+    margin-bottom: 4px;
+
+    filter: invert(1);
   }
 
   nav {
