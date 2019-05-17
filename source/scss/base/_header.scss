@@ -1,14 +1,39 @@
 /* HEADER */
 
 header {
+  padding: $spacing-default 0;
   width: 100%;
 
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    + li {
+      margin-left: 8px;
+    }
+  }
+
   nav {
-    align-items: center;
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    justify-content: flex-end;
+    margin: 0 0 0 auto;
     padding: 32px 0;
     width: 100%;
   }
+
+  ul {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+  }
+}
+
+.header__contents {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1170px;
 }
