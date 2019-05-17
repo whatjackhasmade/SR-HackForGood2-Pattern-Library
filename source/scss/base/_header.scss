@@ -15,7 +15,7 @@ header {
   a {
     display: flex;
     flex-direction: column;
-    padding: $spacing-default;
+    padding: $spacing-default 0;
 
     color: inherit;
     font-size: 14px;
