@@ -1,71 +1,34 @@
 {
-    "name": "edition-node-webpack",
-    "description": "A pure wrapper around patternlab-node core, the default pattern engine, and supporting frontend assets.",
-    "version": "2.0.2",
-    "dependencies": {
-        "@babel/cli": "^7.2.3",
-        "@babel/core": "^7.4.0",
-        "@babel/plugin-proposal-class-properties": "^7.4.0",
-        "@babel/polyfill": "^7.4.0",
-        "@babel/preset-env": "^7.4.2",
-        "@babel/register": "^7.4.0",
-        "babel-core": "^7.0.0-bridge.0",
-        "babel-loader": "^8.0.5",
-        "copy-webpack-plugin": "^5.0.2",
-        "core-js": "^3.0.0",
-        "event-hooks-webpack-plugin": "^2.1.1",
-        "globby": "^9.2.0",
-        "patternlab-node": "^2.12.0",
-        "starterkit-mustache-demo": "^4.0.2",
-        "styleguidekit-assets-default": "^3.5.2",
-        "styleguidekit-mustache-default": "^3.1.0",
-        "uglifyjs-webpack-plugin": "^2.1.2",
-        "webpack": "^4.29.6",
-        "webpack-config-utils": "^2.3.1",
-        "webpack-merge": "^4.2.1"
-    },
-    "repository": "git@github.com:Comcast/patternlab-edition-node-webpack.git",
-    "bugs": "https://github.com/Comcast/patternlab-edition-node-webpack/issues",
-    "author": "Matt Bulfair <Matt_Bulfair@comcast.com>",
-    "contributors": [
-        "Josh Schneider <josh68@gmail.com>",
-        "Paul Wright <paul@paintedbicycle.com>"
-    ],
-    "scripts": {
-        "start": "run-p patternlab:serve",
-        "webpack:version": "webpack --v",
-        "patternlab:build": "webpack --mode=production --env.production",
-        "patternlab:serve": "webpack-dev-server --mode=development --env.development",
-        "patternlab:version": "node patternlab.js version",
-        "patternlab:help": "node patternlab.js help",
-        "patternlab:patternsonly": "node patternlab.js patternsonly",
-        "patternlab:liststarterkits": "node patternlab.js liststarterkits",
-        "patternlab:loadstarterkit": "node patternlab.js loadstarterkit",
-        "patternlab:installplugin": "node patternlab.js installplugin",
-        "postinstall": "node scripts/postinstall.js",
-        "diagnosis": "run-s patternlab:version webpack:version patternlab:build patternlab:serve"
-    },
-    "license": "Apache-2.0",
-    "engines": {
-        "node": ">=5.0"
-    },
-    "babel": {
-        "presets": [
-            [
-                "@babel/preset-env",
-                {
-                    "useBuiltIns": "usage",
-                    "corejs": 3
-                }
-            ]
-        ],
-        "plugins": [
-            "@babel/plugin-proposal-class-properties"
-        ]
-    },
-    "devDependencies": {
-        "npm-run-all": "^4.1.5",
-        "webpack-cli": "^3.3.0",
-        "webpack-dev-server": "^3.2.1"
-    }
+  "name": "@pattern-lab/edition-node-gulp",
+  "description": "The gulp wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.",
+  "version": "2.0.0-alpha.3",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "@pattern-lab/patternengine-node-mustache": "^2.0.0-alpha.1",
+    "@pattern-lab/patternlab-node": "^3.0.0-alpha.8",
+    "@pattern-lab/styleguidekit-assets-default": "^4.0.0-alpha.3",
+    "@pattern-lab/styleguidekit-mustache-default": "^4.0.0-alpha.1",
+    "gulp": "^3.9.1",
+    "minimist": "^1.2.0"
+  },
+  "keywords": [
+    "Pattern Lab",
+    "Atomic Web Design",
+    "Node",
+    "Gulp",
+    "Javascript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pattern-lab/edition-node-gulp.git"
+  },
+  "bugs": "https://github.com/pattern-lab/edition-node-gulp/issues",
+  "author": "Brian Muenzenmeyer",
+  "scripts": {
+    "gulp": "gulp -- "
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0"
+  }
 }
