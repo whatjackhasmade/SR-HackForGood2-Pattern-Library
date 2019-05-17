@@ -1,0 +1,15 @@
+/* ANCHOR */
+
+a,
+.link {
+	color: $cyan-500;
+
+	@include active-states() {
+		text-decoration: none;
+	}
+}
+
+.link--inherit {
+	color: inherit;
+	text-decoration: none;
+}

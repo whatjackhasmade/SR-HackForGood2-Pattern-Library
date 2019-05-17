@@ -1,0 +1,20 @@
+/* BODY */
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	color: $black;
+	font-family: $font-family-primary;
+	font-size: 1.6rem;
+	line-height: 1.5;
+
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		display: block;
+	}
+
+	&.fixed {
+		overflow: hidden;
+	}
+}

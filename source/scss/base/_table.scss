@@ -1,0 +1,53 @@
+/* TABLE */
+
+table {
+	border-collapse: collapse;
+	max-width: 100%;
+	table-layout: fixed;
+	width: 100%;
+	text-align: left;
+	@include bp-max-width($bp-lg) {
+		tr,
+		th,
+		td {
+			display: block;
+		}
+	}
+}
+
+td,
+th {
+	padding: $spacing-default $spacing-small;
+}
+
+td {
+	&:before {
+		@include bp-max-width($bp-lg) {
+			content: attr(data-title) ": ";
+		}
+	}
+}
+
+th {
+	background-color: $grey-300;
+	font-weight: $font-weight-bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+tr {
+	background-color: $white;
+	border-top: 1px solid $grey-300;
+	transition: background-color 0.2s ease;
+	@include active-states() {
+		background-color: $grey-200;
+		.table__actions * {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.table__currency {
+	text-align: right;
+}

@@ -1,3 +1,30 @@
-body {
-  background: red;
-}
+/* STYLE */
+
+@import "mixins/active-states.scss";
+@import "mixins/media-queries.scss";
+
+@import "reset/box-sizing.scss";
+@import "reset/normalize.scss";
+
+@import "vars.scss";
+
+@import "base/anchor.scss";
+@import "base/article.scss";
+@import "base/body.scss";
+@import "base/button.scss";
+@import "base/figure.scss";
+@import "base/footer.scss";
+@import "base/form.scss";
+@import "base/header.scss";
+@import "base/headings.scss";
+@import "base/hr.scss";
+@import "base/html.scss";
+@import "base/image.scss";
+@import "base/list.scss";
+@import "base/main.scss";
+@import "base/nav.scss";
+@import "base/paragraph.scss";
+@import "base/section.scss";
+@import "base/table.scss";
+@import "base/video.scss";
+@import "base/wrapper.scss";

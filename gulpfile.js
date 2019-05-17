@@ -50,7 +50,7 @@ function serve() {
 /* Gulp Task: SCSS Compiling */
 gulp.task("sass", function() {
   return gulp
-    .src(`/source/scss/style.scss`)
+    .src(`source/scss/style.scss`)
     .pipe(sassGlob())
     .pipe(sass())
     .pipe(autoprefixer({ browsers: ["last 2 versions"], cascade: false }))
@@ -60,19 +60,19 @@ gulp.task("sass", function() {
         console.log(`${details.name}: ${details.stats.minifiedSize}`);
       })
     )
-    .pipe(gulp.dest(`/source/css`));
+    .pipe(gulp.dest(`source/css`));
 });
 
 /* Gulp Task: JavaScript Compiling */
 gulp.task("scripts", function() {
   return gulp
     .src([
-      `/source/scripts/base/**/*.js`,
-      `/source/scripts/components/**/*.js`,
-      `/source/scripts/script.js`
+      `source/scripts/base/**/*.js`,
+      `source/scripts/components/**/*.js`,
+      `source/scripts/script.js`
     ])
     .pipe(sourcemaps.init())
-    .pipe(concat(`/source/site.js`))
+    .pipe(concat(`source/site.js`))
     .pipe(babel())
     .pipe(uglify())
     .pipe(sourcemaps.write(`./`))
@@ -81,8 +81,8 @@ gulp.task("scripts", function() {
 
 /* Gulp Task: Browsersync change on file updates */
 gulp.task("watch", ["sass", "scripts"], function() {
-  gulp.watch([`/source/scripts/**/*.js`], ["scripts"]);
-  gulp.watch([`/source/scss/**/*.scss`], ["sass"]);
+  gulp.watch([`source/scripts/**/*.js`], ["scripts"]);
+  gulp.watch([`source/scss/**/*.scss`], ["sass"]);
 });
 
 gulp.task("patternlab:version", function() {
